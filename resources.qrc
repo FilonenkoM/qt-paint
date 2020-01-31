@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>shapes</file>
+        <file>pen</file>
+        <file>border</file>
+        <file>fill</file>
+    </qresource>
+</RCC>

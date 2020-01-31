@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="DisplayWidget" name="displayWidget" native="true">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>626</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>20</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="shapesButton"/>
+   <addaction name="actionPenStyle"/>
+   <addaction name="actionBorder"/>
+   <addaction name="actionBrush"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="shapesButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icon/shapes</normaloff>:/icon/shapes</iconset>
+   </property>
+   <property name="text">
+    <string>Shapes</string>
+   </property>
+   <property name="toolTip">
+    <string>shapes</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionCreateRectangle">
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionCreate_Eliipse">
+   <property name="text">
+    <string>Circle</string>
+   </property>
+  </action>
+  <action name="actionCreateRoundedReact">
+   <property name="text">
+    <string>Rounded rect</string>
+   </property>
+  </action>
+  <action name="actionPenStyle">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icon/pen</normaloff>:/icon/pen</iconset>
+   </property>
+   <property name="text">
+    <string>PenStyle</string>
+   </property>
+   <property name="toolTip">
+    <string>Pen Style</string>
+   </property>
+  </action>
+  <action name="actionThin">
+   <property name="text">
+    <string>Thin</string>
+   </property>
+   <property name="toolTip">
+    <string>Thin</string>
+   </property>
+  </action>
+  <action name="actionMediumThickness">
+   <property name="text">
+    <string>Medium</string>
+   </property>
+   <property name="toolTip">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionThick">
+   <property name="text">
+    <string>Thick</string>
+   </property>
+   <property name="toolTip">
+    <string>Thick</string>
+   </property>
+  </action>
+  <action name="actionBorder">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icon/border</normaloff>:/icon/border</iconset>
+   </property>
+   <property name="text">
+    <string>Border</string>
+   </property>
+   <property name="toolTip">
+    <string>Choose border color</string>
+   </property>
+  </action>
+  <action name="actionBrush">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icon/fill</normaloff>:/icon/fill</iconset>
+   </property>
+   <property name="text">
+    <string>Brush</string>
+   </property>
+   <property name="toolTip">
+    <string>Set brush color</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionTriangle">
+   <property name="text">
+    <string>Triangle</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>DisplayWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">displaywidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
